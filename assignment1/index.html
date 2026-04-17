@@ -10,6 +10,10 @@
             text-align: center;
             padding: 20px;
         }
+         
+        li {
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -54,7 +58,7 @@
                Below is a comparative table of major planets in our solar system. The data highlights key <br>
                physical properties used by astronomers and researchers worldwide.
             </p>
-           <table style="border-collapse: collapse; width: 80%;  padding-bottom: 70px;" >
+           <table style="border-collapse: collapse; width: 80%;  margin-bottom: 70px;" >
                 <caption style="text-align: left; margin-bottom: 10px;">Data about the planets of our solar system (Planetary facts taken from Nasa)</caption>
                 <thead>
                     <tr>
@@ -139,16 +143,70 @@
            </table>
         </section>
         <section style=" border-bottom: 1px solid black; padding-left: 50px;">
-            <h1 style="padding-top: 30px;">Visualizing the Differences Between Planets</h1>
+            <h1 style="padding-top: 30px;">Have Questions About Planetary Science?</h1>
             <p style="color: #777373;">
-                Each planet in our solar system has unique physical characteristics. Visual comparisons help highlight how vastly <br> 
-                different terrestrial planets are from gas giants and ice giants.
+                Interested in learning more about space, astronomy, or how planetary data is collected and analyzed? <br>
+                Reach out and we’ll get back to you.
             </p>
-            <figure>
-                <img src="assets/premium_photo.avif" alt="planets" width="1263" height="541" style="border-radius: 20px;">
-                <figcaption>Comparison of Planetary Sizes and Masses</figcaption>
-            </figure>
+            <form action=""  method="post">
+                <label for="full name">Full Name</label>
+                <input type="text" id="full name" name="full name" placeholder="Full name" required style="display: block; width: 30%; height: 45px; margin-bottom: 12px;">
+               
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required style="display: block; width: 30%; height: 45px; margin-bottom: 12px;">
+    
+                <label for="city">City</label>
+                <select id="city" name="city" required style="display: block; width: 30%; height: 45px; margin-bottom: 12px;">
+                    <option value="" disabled selected>Select your city</option>
+                    <option value="new-york">New York</option>
+                    <option value="los-angeles">Los Angeles</option>
+                    <option value="chicago">Chicago</option>
+                    <option value="houston">Houston</option>
+                    <option value="phoenix">Phoenix</option>
+                </select>
+                
+                <label for="phone number">Phone Number</label>
+                <input type="tel" id="phone number" name="phone number"  placeholder="Please enter a valid phone number" required style="display: block; width: 30%; height: 45px; margin-bottom: 12px;"> 
+                
+                <label for="message" style="display: block;"> Message</label>
+                <textarea id="message" name="message" placeholder="Your message here..." required style="display: block; width: 30%; height: 100px; "></textarea>
+                <caption>100 characters max</caption>
+                
+                <p>How should we contact you?</p>
+                <input type="radio" id="Phone" name="contact method" value="phone" requiredconat> 
+                <label for="Phone">Phone</label>
+                <input type="radio" id="Email" name ="contact method" value="Email">
+                <label for="Email">Email</label>
+                <input type="radio" name="contact method" value="Both" id="Both">
+                <label for="Both">Both</label>
+
+                <p>How do you hear about us?</p>
+                <input type="checkbox" id ="friend" value="friend" name="referals">
+                <label for="friend">Friend</label> 
+                <input type="checkbox" id="Ts Academy" value="Ts Academy" name="referals">
+                <label for="Ts Academy">Ts Academy</label>
+                <input type="checkbox" id="Others" value="social media" name="referals">
+                <label for="Others">Others</label> 
+                <input type="submit" value="Submit" style="display: block; width: 30%; height: 45px; margin-top: 20px; margin-bottom: 70px; background-color: black; color: white; border: none; cursor: pointer;">
+            </form>
         </section>
-    </main>
+    </main> 
+    <footer>  
+        <section style=" padding-left: 50px;  padding-right:40px;" >
+            <h2>About</h2>
+            <ul>
+                <li>plantery Facts</li>
+                <li>Gallery</li>
+                <li>World Records</li>
+                <li>Guides</li>
+            </ul>
+            <hr style="width: 100%;">
+             <pre>
+                <p >© 2022Joshua.       Designed by Amaka       All rights reserved.</p> 
+                <p>privacy and Policy       Tems and Conditions</p>
+             </pre>
+        </section>  
+        
+    </footer>
 </body>
 </html>
