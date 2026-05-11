@@ -40,10 +40,11 @@ img {
 /* code strat here*/
 body{
     display:flex;
-    min-height: 100vh;
+    min-height: auto;
     justify-content: center;
     align-content: center;
     background-color: #f0f2f5;
+    padding: 20px;
 }
 
 .parent{
@@ -52,8 +53,11 @@ body{
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     width: 350px;
+    min-height: auto;
     font-family: 'Inter';
     background: #ffffff;
+    height: fit-content;
+    overflow: hidden
 }
 
 img{
@@ -75,7 +79,7 @@ img{
     letter-spacing: 1px;
     padding: 4px 8px;
     border-radius: 4px;
-    /* align-self: flex-start; */
+    align-self: flex-start; */
 }
 
 .title {
@@ -98,7 +102,7 @@ hr{
 
 footer{
     display: flex;
-    justify-content: space-between;
+       justify-content: space-between;
 }
 
 button{
